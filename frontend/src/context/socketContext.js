@@ -11,7 +11,7 @@ export default function WsContextProvider({children}){
     useEffect(()=>{
         if(!ws.current){
         
-            ws.current = new WebSocket('ws://localhost:8000');
+            ws.current = new WebSocket('ws://localhost:5000/ws');
 
             ws.current.onopen = ()=>{
                 console.log("WebSocket connection established");
