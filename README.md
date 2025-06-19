@@ -57,13 +57,13 @@ WebSocket is available at ws://localhost:3000/ws.
 
 Test the API:
 
-Access http://localhost:3000/ to verify the server is running (returns { "message": "api/v1" }).
+Access http://localhost:5000/ to verify the server is running (returns { "message": "api/v1" }).
 
 
 Test WebSocket:
 
 Use wscat to connect:npm install -g wscat
-    wscat -c ws://localhost:3000/ws
+    wscat -c ws://localhost:5000/ws
 
 
 Send a join message:{"type":"join","username":"testUser"}
